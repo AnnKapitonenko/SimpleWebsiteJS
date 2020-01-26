@@ -1,0 +1,554 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@font-face {
+  font-family: "GothamBook";
+  src: url("fonts/GothamBook");
+  src: local("GothamBook"), url("fonts/GothamBook/GothamBook.woff") format("woff"), url("fonts/GothamBook/GothamBook.ttf") format("truetype");
+}
+.fontsforweb_fontid_10146 {
+  font-family: "GothamBook", sans-serif !important;
+}
+
+@font-face {
+  font-family: "gothambold1";
+  src: url("fonts/gothambold/gothambold1.eot");
+  src: local("gothambold1"), url("fonts/gothambold/gothambold1.woff") format("woff"), url("fonts/gothambold/gothambold1.ttf") format("truetype");
+}
+.fontsforweb_fontid_5903 {
+  font-family: "gothambold1", sans-serif !important;
+}
+
+@font-face {
+  font-family: "gotham_mediumregular";
+  src: url("fonts/Gotham Medium Regular/gotham_medium_regular-webfont.woff2") format("woff2"), url("fonts/Gotham Medium Regular/gotham_medium_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+}
+
+#scroll {
+  fill: white;
+}
+
+.seti {
+  display: flex;
+}
+.seti a:hover {
+  color: #0c027e;
+}
+.seti .face {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  width: 192px;
+  height: 50px;
+  font: normal 14px "GothamBook", sans-serif;
+  line-height: 22px;
+  text-decoration: none;
+  border: 1px solid black;
+  background: none;
+  display: block;
+}
+button:hover {
+  color: white;
+  background: #00B8FF;
+  border: none;
+}
+
+.inner {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 22px;
+  color: white;
+}
+
+p {
+  font: normal 18px "Open Sans", sans-serif;
+  line-height: 30px;
+  color: #4b5562;
+}
+
+.header {
+  height: 800px;
+  background: url("images/s1_bg.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-top: 53px;
+}
+.header header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header header nav :nth-child(4) {
+  margin: 0;
+}
+.header header nav a {
+  margin-right: 70px;
+}
+.header header nav a:before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 15px;
+  display: inline-block;
+}
+.header header nav a:hover:before {
+  background: white;
+}
+.header #intro .slick-arrow {
+  visibility: hidden;
+}
+.header #intro .slick-dots {
+  width: 25px;
+  top: 50%;
+  right: 39px;
+  transform: translateY(-50%);
+  position: absolute;
+}
+.header #intro .slick-dots li {
+  display: inline-block;
+}
+.header #intro .slick-dots li button {
+  font-size: 0;
+  padding: 0;
+  background: none;
+  width: 9px;
+  height: 9px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 25px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  color: white;
+}
+.header #intro .slick-dots li button:hover {
+  background: white;
+}
+.header #intro .slick-dots li.slick-active button {
+  background: white;
+}
+.header .face1 {
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.header .face1 svg:hover {
+  color: yellow;
+}
+.header #intro {
+  height: calc(100% - 150px);
+}
+.header #intro .slick-list {
+  height: 80%;
+}
+.header #intro .slick-track {
+  height: calc(100% - 100px);
+}
+.header #intro .slick-track .slick-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header #intro .slick-track .slick-slide .slide-content {
+  color: white;
+}
+.header #intro .slick-track .slick-slide h1 {
+  font: bold 80px "gothambold1", sans-serif;
+  letter-spacing: 0.05em;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.header #intro .slick-track .slick-slide h3 {
+  font: normal 18px "GothamBook", sans-serif;
+  letter-spacing: 0.3em;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.header #intro .slick-track .slick-slide .btn {
+  text-transform: uppercase;
+  padding: 10px 15px;
+  background: #EECD31;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+.projects {
+  color: #2c4058;
+  position: relative;
+}
+.projects h1 {
+  text-align: center;
+  font: bold 44px "GothamBold", sans-serif;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 142px;
+  margin-bottom: 170px;
+}
+.projects .trade, .projects .centre {
+  display: flex;
+  justify-content: space-between;
+}
+.projects .trade h2, .projects .trade h3, .projects .trade button, .projects .trade span, .projects .trade p, .projects .centre h2, .projects .centre h3, .projects .centre button, .projects .centre span, .projects .centre p {
+  margin: 0;
+}
+.projects .trade h3, .projects .centre h3 {
+  margin-top: 60px;
+  text-transform: uppercase;
+  line-height: 24px;
+  font: normal 22px "GothamBook", sans-serif;
+}
+.projects .trade h2, .projects .centre h2 {
+  margin-top: 20px;
+  font: bold 44px "GothamBold", sans-serif;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.projects .trade p, .projects .centre p {
+  margin-top: 45px;
+  margin-bottom: 24px;
+}
+.projects .trade span, .projects .centre span {
+  display: inline-block;
+  margin: 50px 0;
+  font: italic 18px "GothamBook", sans-serif;
+  line-height: 30px;
+}
+.projects .pict1, .projects .pict2 {
+  width: 630px;
+  height: 470px;
+  position: relative;
+  z-index: 2;
+}
+.projects .pict1 {
+  background-image: url("images/trade.png");
+}
+.projects .pict2 {
+  background-image: url("images/centre.png");
+}
+.projects .blue-trade, .projects .purple-center {
+  position: absolute;
+  z-index: 1;
+  width: 630px;
+  height: 470px;
+}
+.projects div.pos-pict {
+  position: relative;
+}
+.projects div.pos-pict .blue-trade {
+  background: #55B7FF;
+  left: -260px;
+  bottom: 100px;
+}
+.projects div.pos-pict .purple-center {
+  background: #7E5AFF;
+  left: 260px;
+  top: -100px;
+}
+.projects .centre {
+  flex-direction: row-reverse;
+  margin-bottom: 140px;
+}
+.projects .trade {
+  margin-bottom: 240px;
+}
+
+.news {
+  height: 1035px;
+  background: url("images/bg_news.png");
+  background-size: cover;
+  background-position: center;
+}
+.news h1 {
+  font: 44px "gotham_mediumregular", sans-serif;
+  line-height: 22px;
+  color: white;
+  text-align: center;
+  padding: 177px 0 100px 0;
+  margin: 0 auto;
+}
+.news h1:after {
+  content: "";
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px white solid;
+  width: 97px;
+  margin: 0 auto;
+  margin-top: -61px;
+}
+
+#slider2 .slick-dots {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#slider2 .slick-dots li {
+  display: inline-block;
+  margin-top: 23px;
+}
+#slider2 .slick-dots li button {
+  font-size: 0;
+  padding: 0;
+  background: none;
+  width: 9px;
+  height: 9px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 37px;
+  cursor: pointer;
+  color: white;
+}
+#slider2 .slick-dots li button:hover {
+  background: white;
+}
+#slider2 .slick-dots li.slick-active button {
+  background: white;
+}
+
+#slider2 .slick-arrow {
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  margin: -60px;
+  background: none;
+  border-radius: 50%;
+  border: 1px solid white;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  padding: 0;
+}
+#slider2 .slick-arrow:hover {
+  opacity: 0.7;
+}
+#slider2 .slick-arrow:before {
+  content: "";
+  min-height: 10px;
+  max-width: 10px;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  display: block;
+  box-sizing: border-box;
+  transform-origin: center;
+  margin-top: 14px;
+  margin-left: 12px;
+}
+#slider2 .slick-arrow.slick-prev {
+  left: 0;
+  padding-left: 4px;
+}
+#slider2 .slick-arrow.slick-prev:before {
+  transform: rotate(-135deg);
+}
+#slider2 .slick-arrow.slick-next {
+  right: 0;
+  padding-right: 8px;
+}
+#slider2 .slick-arrow.slick-next:before {
+  transform: rotate(45deg);
+}
+
+#slider2 .inner {
+  width: 1173px;
+}
+#slider2 .slick-slide {
+  height: 534px;
+  display: flex;
+  justify-content: center;
+  background: white;
+  margin: 15px;
+  color: #2C4058;
+  font: normal 18px "GothamBook", sans-serif;
+  line-height: 22px;
+}
+#slider2 .slick-slide div {
+  margin-top: 260px;
+  margin-left: -351px;
+}
+#slider2 .slick-slide div h2 {
+  font: bold 22px "GothamBold", sans-serif;
+  line-height: 34px;
+  text-transform: uppercase;
+  max-width: 370px;
+  margin: 0;
+}
+#slider2 .slick-slide div p {
+  margin: 27px 0 40px 0;
+}
+#slider2 .slick-slide div img {
+  float: left;
+  margin-right: 6px;
+  border-radius: 50%;
+}
+#slider2 .slick-slide div h3 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: inherit;
+}
+#slider2 .slick-slide div span {
+  font-size: 14px;
+  color: #55B7FF;
+}
+
+.gallery {
+  height: 1000px;
+  color: #2c4058;
+}
+.gallery .inner {
+  position: relative;
+}
+.gallery .imbig {
+  position: relative;
+}
+.gallery svg {
+  position: absolute;
+  left: 220px;
+  top: 190px;
+}
+.gallery h1 {
+  text-align: center;
+  font: bold 44px "GothamBold", sans-serif;
+  line-height: 22px;
+  padding-top: 177px;
+  padding-bottom: 70px;
+}
+.gallery h1:after {
+  content: "";
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px black solid;
+  width: 97px;
+  margin: 0 auto;
+  margin-top: -61px;
+}
+.gallery .col {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 2px;
+}
+.gallery button {
+  margin: 50px auto 140px;
+}
+
+.inner1 {
+  width: 770px;
+  margin: 0 auto;
+}
+
+footer {
+  background: url("images/bg_footer.png");
+  background-size: cover;
+  height: 524px;
+  position: relative;
+  z-index: 1;
+}
+footer div.head-footer {
+  padding-top: 205px;
+  display: flex;
+  justify-content: space-between;
+}
+footer span {
+  color: white;
+  font: normal 14px "GothamBook", sans-serif;
+  line-height: 22px;
+  margin-top: 45px;
+  display: inline-block;
+}
+footer span:first-of-type:after {
+  content: " ";
+  background: white;
+  width: 2px;
+  height: 20px;
+  float: right;
+  margin: 0 20px;
+}
+
+#map {
+  position: relative;
+  z-index: 1;
+}
+
+form {
+  position: absolute;
+  height: 450px;
+  width: 770px;
+  background: white;
+  margin-top: -300px;
+  z-index: 2;
+  color: #2c4058;
+  font: normal 18px "GothamBook", sans-serif;
+  line-height: 22px;
+}
+form h1 {
+  margin: 0 0 45px 0;
+  padding-top: 91px;
+  text-align: center;
+  text-transform: uppercase;
+  font: bold 44px "GothamBold", sans-serif;
+  line-height: 22px;
+}
+form span {
+  display: flex;
+  margin-bottom: 42px;
+}
+form .current-location {
+  float: left;
+  margin-left: 70px;
+  margin-right: 57px;
+}
+form .current-location .fas {
+  color: #7E5AFF;
+  margin-right: 15px;
+}
+form button {
+  width: 140px;
+  margin: 0 570px;
+}
+form [type=text],
+form [type=email] {
+  border: none;
+  padding-bottom: 21px;
+  margin-bottom: 37px;
+  font: normal 18px "GothamBook", sans-serif;
+  line-height: 22px;
+  border-bottom: 1px solid #2C4058;
+  outline: none;
+}
+form [type=text] {
+  color: #2C4058;
+}
+form [type=text]::-webkit-input-placeholder {
+  color: #2C4058;
+}
+form [type=email] {
+  border-bottom: 1px solid #A5AAB0;
+  color: #A5AAB0;
+}
+
+/*# sourceMappingURL=intro.css.map */
